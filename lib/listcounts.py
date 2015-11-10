@@ -39,9 +39,7 @@ def average(lista):
 def median(lista):
     if len(lista) == 0:
         raise ValueError
-    antal_saker = 0
-    for i in lista:
-        antal_saker += 1
+    antal_saker = len(lista)
     median = antal_saker/2
     if antal_saker % 2 == 1:
         return sorted(lista)[median]
